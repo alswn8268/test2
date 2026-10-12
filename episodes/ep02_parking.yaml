@@ -1,0 +1,100 @@
+id: ep02_parking
+title: 경비원 모자를 쳐낸 외제차 청년… 상견례 상대를 알게 되는데
+thumbnail_text: 경비 주제에? 아버님!
+location: 아파트 주차장
+twist_type: 관계
+background_prompt: Korean apartment outdoor parking lot, daytime, blue disabled parking sign, black luxury sedan
+characters:
+- id: taejun
+  name: 강태준
+  role: villain
+  gender: male
+  age: 33
+  look_prompt: Korean man in his early 30s, slick navy suit, sunglasses on head, arrogant smirk
+- id: deokbae
+  name: 김덕배
+  role: hero
+  gender: male
+  age: 68
+  look_prompt: Korean elderly man late 60s, neat white hair, apartment security guard uniform and cap, dignified calm face
+- id: sujin
+  name: 김수진
+  role: helper
+  gender: female
+  age: 31
+  look_prompt: Korean woman early 30s, bright smile, shown on a smartphone video call screen
+shots:
+- speaker: taejun
+  line: 야! 경비! 내 차에 손대지 말랬지!
+  emotion: 분노
+  beat: 사건 폭발
+  visual: extreme close-up of arrogant young man pointing and shouting
+  emphasis: true
+- speaker: deokbae
+  line: 여기는 장애인 구역입니다. 차 빼주세요.
+  emotion: 분노
+  beat: 상황 설명
+  visual: guard's hand placing a parking violation sticker on a black luxury car
+- speaker: taejun
+  line: 이 차가 얼만 줄 알아? 경비 주제에!
+  emotion: 분노
+  beat: 막말 + 스티커 찢기
+  visual: young man tearing off the sticker and sneering in the guard's face
+- speaker: caption
+  line: 조수석에 웬 상견례 선물…?
+  emotion: 궁금증
+  beat: 떡밥1
+  visual: passenger seat with a fruit basket, ribbon reading wedding meeting gift
+- speaker: deokbae
+  line: 오늘 우리 집에도 귀한 손님이 오는디.
+  emotion: 궁금증
+  beat: 떡밥2
+  visual: guard glancing at his phone wallpaper with his daughter's photo
+- speaker: taejun
+  line: 나 이 아파트 사위 될 사람이야. 당신 잘려!
+  emotion: 더 큰 분노
+  beat: 협박
+  visual: young man tapping the guard's name badge with his finger
+- speaker: deokbae
+  line: 자네, 그 말 책임질 수 있겠는가?
+  emotion: 더 큰 분노
+  beat: 경고
+  visual: guard looking straight at the young man, calm but stern eyes
+- speaker: taejun
+  line: 모자나 똑바로 쓰고 다녀요, 할아버지.
+  emotion: 더 큰 분노
+  beat: 선 넘음 - 모자 쳐내기
+  visual: guard's cap falling to the ground in slow motion, close-up
+- speaker: taejun
+  line: 자기야~ 나 도착했어. 아버님 어디 계셔?
+  emotion: 궁금증
+  beat: 전화
+  visual: young man smiling on the phone, split screen with smiling woman
+- speaker: sujin
+  line: 아빠 지금 근무 중이야. 전화해 볼게!
+  emotion: 궁금증
+  beat: 긴장
+  visual: smartphone video call screen of a smiling young woman
+- speaker: deokbae
+  line: 어, 수진아. 사위 될 사람? 지금 내 앞에 있네.
+  emotion: 사이다
+  beat: 반전
+  visual: guard's phone ringing with caller name 'my daughter Sujin', young man's face freezing
+  emphasis: true
+- speaker: deokbae
+  line: 차부터 빼게. 찢은 딱지는 자네가 다시 붙이고.
+  emotion: 사이다
+  beat: 참교육
+  visual: guard calmly picking up his cap and putting it back on
+- speaker: taejun
+  line: 아, 아버님… 모자 털어드릴까요?
+  emotion: 웃음
+  beat: 굴복
+  visual: young man crouching and taping the torn sticker back, sweating
+- speaker: deokbae
+  line: 수진아, 상견례는… 다시 생각해 보자.
+  emotion: 웃음
+  beat: 마무리 한 방
+  visual: guard turning his back with the phone to his ear, young man's jaw dropping
+  emphasis: true
+end_caption: 여러분이 아버지라면, 이 결혼 허락하시겠습니까?

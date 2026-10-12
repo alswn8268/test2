@@ -1,0 +1,73 @@
+# 시니어 숏드라마 자동화 파이프라인 설정
+# 값을 바꾸면 다음 실행부터 바로 적용됩니다.
+
+writer:
+  # 대본 작성 AI (Anthropic Claude). ANTHROPIC_API_KEY 환경변수가 필요합니다.
+  model: claude-opus-5-5
+  effort: high
+
+tts:
+  # edge  : 무료 Microsoft Edge 음성 (인터넷 필요, API 키 불필요)
+  # silent: 소리 없이 길이만 계산 (테스트용)
+  provider: edge
+  # 역할/성별별 기본 음성. 캐릭터 YAML에 voice를 적으면 그게 우선입니다.
+  voices:
+    male: ko-KR-InJoonNeural
+    female: ko-KR-SunHiNeural
+  # 나이가 많을수록 천천히, 낮게
+  senior_age: 60
+  senior_rate: "-8%"
+  senior_pitch: "-12Hz"
+  villain_rate: "+12%"
+
+images:
+  # placeholder: 색 배경 + 이름 카드 (테스트용)
+  # folder     : assets/<에피소드id>/ 안의 그림 사용 (직접 만든 AI 이미지)
+  # sdwebui    : 로컬 Stable Diffusion WebUI / Forge API로 자동 생성
+  provider: folder
+  sdwebui_url: http://127.0.0.1:7860
+  negative_prompt: "text, watermark, logo, blurry, deformed face, extra fingers"
+  steps: 28
+
+video:
+  width: 1080
+  height: 1920
+  fps: 30
+  # 컷 사이 여유(초). 대사가 끝나고 숨 돌릴 시간
+  shot_padding: 0.25
+  # 자막만 있는 컷의 길이(초)
+  caption_shot_seconds: 2.2
+  end_card_seconds: 2.5
+  # 배경음악 파일 경로 (비우면 없음). 대사보다 작게 섞입니다.
+  bgm: ""
+  bgm_volume_db: -20
+
+subtitle:
+  font_file: assets/fonts/NotoSansCJKkr-Black.otf
+  font_name: Noto Sans CJK KR Black
+  # 글자 크기 = 화면 높이 x size_ratio (단, 한 줄이 화면 폭을 넘지 않게 자동 축소)
+  # 1080x1920 기준 약 87px, 한 줄 11자. 휴대폰에서 돋보기 없이 읽히는 크기
+  size_ratio: 0.05
+  max_chars_per_line: 11
+  max_lines: 2
+
+rules:
+  # 원칙 체크 기준
+  max_characters: 3
+  first_hook_seconds: 3.0
+  max_shot_seconds: 10.0
+  min_total_seconds: 35
+  max_total_seconds: 95
+  # 최근 몇 편과 반전 유형/장소가 겹치면 경고할지
+  history_window: 3
+
+paths:
+  episodes: episodes
+  assets: assets
+  output: output
+  inbox: inbox
+
+moneyprinter:
+  # MoneyPrinterTurbo API (docker로 따로 실행). 나레이션형 영상용
+  api_url: http://127.0.0.1:8080/api/v1
+  voice_name: ko-KR-SunHiNeural-Female

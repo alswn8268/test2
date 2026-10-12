@@ -2,10 +2,28 @@
 
 중장년층 타깃 AI 숏드라마(60~90초)를 **기획 → 대본 → AI 생성 → 편집**까지 한 번에 만들 수 있도록 정리한 저장소입니다.
 
+## 빠른 시작 (자동 제작)
+
+```bash
+pip install -r requirements.txt
+python -m shortdrama setup                       # 글꼴·폴더 준비
+python -m shortdrama make episodes/*.yaml        # 대본 3편 → 완성 영상 3편
+python -m shortdrama write "주제 한 줄" --make    # 주제 → 대본 → 영상 (Claude API 키 필요)
+python -m shortdrama watch                       # inbox 폴더에 넣으면 자동 제작
+```
+
+자세한 설명은 **`파이프라인_사용법.md`** 를 보세요.
+
 ## 폴더 구성
 
 | 경로 | 내용 |
 |---|---|
+| `파이프라인_사용법.md` | 자동 제작 파이프라인 설치·사용법 (초보자용) |
+| `shortdrama/` | 파이프라인 코드 (대본 → 더빙 → 원칙 검사 → 그림 → 편집 → 자막) |
+| `config.yaml` | 목소리·자막 크기·그림 방식 등 설정 |
+| `episodes/` | 영상으로 만들 대본(YAML). 아래 대본 3편이 들어 있음 |
+| `assets/<에피소드id>/` | 인물 그림을 넣는 곳 (예: `mansu.png`) |
+| `inbox/` → `output/` | 자동 감시 폴더 → 완성본 폴더 |
 | `제작원칙_체크리스트.md` | 7대 원칙을 "업로드 전 체크리스트"로 바꾼 것 |
 | `템플릿/대본_템플릿.md` | 새 에피소드를 만들 때 복사해서 쓰는 빈 양식 |
 | `대본/01_식당_머리카락.md` | 완성 대본 ① 증거 반전형 |

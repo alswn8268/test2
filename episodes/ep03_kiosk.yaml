@@ -1,0 +1,95 @@
+id: ep03_kiosk
+title: 키오스크 앞 할머니를 생방송으로 망신 주던 여자… 댓글 하나에 얼굴이 하얘졌다
+thumbnail_text: 노인은 쓰지 마세요!?
+location: 카페
+twist_type: 자업자득
+background_prompt: modern Korean franchise cafe, self-order kiosk screen, morning rush
+characters:
+- id: sera
+  name: 오세라
+  role: villain
+  gender: female
+  age: 28
+  look_prompt: Korean woman late 20s, office blazer, holding phone on selfie stick, livestreaming, irritated face
+- id: bokrye
+  name: 이복례
+  role: hero
+  gender: female
+  age: 75
+  look_prompt: Korean grandmother mid 70s, beige cardigan, reading glasses, gentle smile
+- id: boss
+  name: 최부장
+  role: helper
+  gender: male
+  age: 50
+  look_prompt: livestream comment box on a phone screen, no person
+shots:
+- speaker: sera
+  line: 할머니! 버튼 하나 누르는 데 몇 분이에요?!
+  emotion: 분노
+  beat: 사건 폭발
+  visual: extreme close-up of irritated young woman, selfie camera angle
+  emphasis: true
+- speaker: sera
+  line: 여러분, 이게 요즘 노인들이에요~
+  emotion: 분노
+  beat: 진상 정체 - 라이브 방송
+  visual: phone screen showing red LIVE badge, woman mocking to camera
+- speaker: bokrye
+  line: 미안해요, 금방 할게요. 주문이 좀 많아서…
+  emotion: 분노
+  beat: 구박당함
+  visual: grandmother lifting her reading glasses, slowly touching the kiosk
+- speaker: caption
+  line: 할머니가 커피를 12잔이나…?
+  emotion: 궁금증
+  beat: 떡밥1
+  visual: kiosk screen showing 12 iced americanos in the cart
+- speaker: caption
+  line: "댓글: 이 언니 오늘 아프다고 하지 않았음?"
+  emotion: 궁금증
+  beat: 떡밥2 - 스쳐가는 댓글
+  visual: livestream comment sliding past on the phone screen
+- speaker: sera
+  line: 답답해서 못 보겠네. 노인은 키오스크 쓰지 마세요!
+  emotion: 더 큰 분노
+  beat: 막말 + 카드 낚아챔
+  visual: woman snatching the grandmother's card
+- speaker: sera
+  line: 자, 처음부터 다시 하세요~
+  emotion: 더 큰 분노
+  beat: 선 넘음 - 주문 취소
+  visual: kiosk screen 'cart is empty', grandmother's hand trembling
+- speaker: boss
+  line: 오세라 대리, 아파서 병가 낸다며? 지금 어디야?
+  emotion: 사이다
+  beat: 반전 - 상사 댓글
+  visual: pinned livestream comment in a big yellow box, viewer count jumping to 8421
+  emphasis: true
+- speaker: sera
+  line: 부, 부장님…? 이거 어떻게 꺼요?
+  emotion: 사이다
+  beat: 역풍
+  visual: woman's face turning pale, fumbling with the phone
+- speaker: bokrye
+  line: 이리 줘 봐요. 라이브 끄는 건 여기 누르면 돼.
+  emotion: 사이다
+  beat: 참교육 - 할머니가 더 잘함
+  visual: grandmother calmly taking the phone and pointing at the button
+- speaker: sera
+  line: 할머니, 빨리요! 제발요…!
+  emotion: 웃음
+  beat: 처지 역전
+  visual: young woman begging the grandmother with both hands together
+- speaker: bokrye
+  line: 끄기 전에 부장님한테 인사는 하고 가요.
+  emotion: 웃음
+  beat: 한 방
+  visual: grandmother turning the phone camera back toward the woman's face
+- speaker: bokrye
+  line: 나는 경로당 친구들 커피 사러 왔어~
+  emotion: 웃음
+  beat: 마무리 - 12잔의 정체
+  visual: kiosk screen 'payment complete 12 drinks', grandmother smiling
+  emphasis: true
+end_caption: 키오스크 앞에서 당황해 본 적 있으신가요? 댓글로 나눠 주세요

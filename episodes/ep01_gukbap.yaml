@@ -1,0 +1,101 @@
+id: ep01_gukbap
+title: 국밥에서 머리카락 나왔다며 10만 원 요구한 손님… CCTV 틀자 벌어진 일
+thumbnail_text: 사장 나와! 근데…
+location: 국밥집
+twist_type: 증거
+background_prompt: old traditional Korean gukbap restaurant interior, warm lighting, steaming bowls, wooden tables
+characters:
+- id: mansu
+  name: 박만수
+  role: villain
+  gender: male
+  age: 52
+  look_prompt: Korean man in his 50s, bleached blond long bangs, thick gold necklace, shiny black jacket
+- id: sunja
+  name: 정순자
+  role: hero
+  gender: female
+  age: 72
+  look_prompt: Korean grandmother in her 70s, pure white hair in a low bun, floral apron, calm warm eyes
+- id: minho
+  name: 민호
+  role: helper
+  gender: male
+  age: 22
+  look_prompt: Korean young man early 20s, military buzz cut, plain gray hoodie
+shots:
+- speaker: mansu
+  line: 내가 여기서 돈을 얼마나 썼는데! 사장 나오라고 해!
+  emotion: 분노
+  beat: 사건 폭발
+  visual: extreme close-up of furious man slamming a spoon on the table
+  emphasis: true
+- speaker: mansu
+  line: 국밥에 머리카락이 나왔잖아!
+  emotion: 분노
+  beat: 진상 이유 공개
+  visual: close-up of a long blond hair on a spoon above a bowl of soup
+- speaker: sunja
+  line: 아이고, 손님. 무슨 일이래요?
+  emotion: 분노
+  beat: 주인공 등장
+  visual: grandmother owner walking over, wiping hands on apron, close-up
+- speaker: mansu
+  line: 환불에 위로금 10만 원! 안 그럼 별점 테러야!
+  emotion: 분노
+  beat: 요구 사항
+  visual: man pointing finger at the grandmother, shouting
+- speaker: sunja
+  line: 손님… 우리 가게 오늘 처음 오셨는디?
+  emotion: 궁금증
+  beat: 떡밥1 - 거짓말
+  visual: grandmother with a subtle knowing smile, close-up
+  emphasis: true
+- speaker: sunja
+  line: 근데 그 머리카락, 색깔이 참 곱네.
+  emotion: 궁금증
+  beat: 떡밥2 - 머리카락 색
+  visual: grandmother staring at the blond hair on the spoon
+- speaker: caption
+  line: 손자는 왜 CCTV를 보고 있을까…?
+  emotion: 궁금증
+  beat: 떡밥3
+  visual: young man at the counter looking at a CCTV monitor
+- speaker: mansu
+  line: 늙은이가 장사하니까 이 모양이지!
+  emotion: 더 큰 분노
+  beat: 막말
+  visual: man standing up and leaning toward the grandmother aggressively
+- speaker: minho
+  line: 할머니! 괜찮으세요?
+  emotion: 더 큰 분노
+  beat: 선 넘음 - 밀침
+  visual: young man catching the stumbling grandmother, worried face
+- speaker: minho
+  line: 손님, 이 영상 속 사람 손님 맞죠?
+  emotion: 사이다
+  beat: 반전1 - CCTV
+  visual: phone screen showing CCTV footage of the man pulling his own hair into the soup, red circle
+  emphasis: true
+- speaker: sunja
+  line: 우리 가게는 나랑 손자 둘뿐이여. 나는 백발, 얘는 군인!
+  emotion: 사이다
+  beat: 반전2 - 머리카락 주인
+  visual: grandmother pointing at her white hair and the grandson's buzz cut
+- speaker: minho
+  line: 업무방해에 공갈미수. 경찰 부를게요.
+  emotion: 사이다
+  beat: 참교육
+  visual: phone screen dialing 112, young man calm and firm
+- speaker: mansu
+  line: 아, 아니 그게… 잠깐만요!
+  emotion: 웃음
+  beat: 도망
+  visual: man panicking and running to the door, blond wig slipping off his head
+- speaker: sunja
+  line: 손님! 머리카락 놓고 가셔~
+  emotion: 웃음
+  beat: 마무리 한 방
+  visual: grandmother holding up a blond wig, laughing
+  emphasis: true
+end_caption: 여러분 가게에도 이런 손님 온 적 있나요? 댓글로 알려주세요
