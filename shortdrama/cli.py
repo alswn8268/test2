@@ -142,7 +142,7 @@ def cmd_mpt(cfg: Config, args) -> int:
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="shortdrama", description="시니어 숏드라마 자동 제작 파이프라인")
     p.add_argument("--config", help="설정 파일 경로 (기본: config.yaml)")
-    p.add_argument("--tts", help="tts.provider 임시 변경 (edge/silent)")
+    p.add_argument("--tts", help="tts.provider 임시 변경 (edge/espeak/silent)")
     p.add_argument("--images", help="images.provider 임시 변경 (folder/sdwebui/placeholder)")
     sub = p.add_subparsers(dest="cmd", required=True)
 

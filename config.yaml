@@ -8,6 +8,7 @@ writer:
 
 tts:
   # edge  : 무료 Microsoft Edge 음성 (인터넷 필요, API 키 불필요)
+  # espeak: 인터넷 없이 쓰는 기계음 (예비용, espeak-ng 설치 필요)
   # silent: 소리 없이 길이만 계산 (테스트용)
   provider: edge
   # 역할/성별별 기본 음성. 캐릭터 YAML에 voice를 적으면 그게 우선입니다.

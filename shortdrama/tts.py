@@ -5,7 +5,7 @@ import asyncio
 from pathlib import Path
 
 from .config import Config
-from .media import make_silence, probe_duration
+from .media import make_silence, probe_duration, run
 from .schema import Character, Role
 
 
@@ -42,6 +42,16 @@ def synthesize(cfg: Config, text: str, ch: Character, out: Path) -> float:
         tmp = out.with_suffix(".part.mp3")
         asyncio.run(edge_tts.Communicate(text, voice, rate=rate, pitch=pitch).save(str(tmp)))
         tmp.rename(out)
+    elif provider == "espeak":
+        # 인터넷 없이 쓰는 예비 음성 (기계음). 사용 전: sudo apt install espeak-ng
+        voice, rate, pitch = voice_settings(cfg, ch)
+        variant = "f3" if ch.gender.value == "female" else "m3"
+        speed = int(165 * (1 + int(rate.rstrip("%")) / 100))
+        pitch_val = max(0, min(99, 50 + int(pitch.rstrip("Hz")) * 2))
+        wav = out.with_suffix(".wav")
+        run(["espeak-ng", "-v", f"ko+{variant}", "-s", str(speed), "-p", str(pitch_val), "-w", str(wav), text])
+        run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(wav), "-c:a", "libmp3lame", "-q:a", "4", str(out)])
+        wav.unlink()
     else:
         raise ValueError(f"알 수 없는 tts.provider: {provider}")
     return probe_duration(out)
